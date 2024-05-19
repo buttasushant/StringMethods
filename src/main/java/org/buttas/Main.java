@@ -1,5 +1,7 @@
 package org.buttas;
 
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         String name = "Sushant";
@@ -10,6 +12,10 @@ public class Main {
         System.out.println(name.concat(" Butta"));
         System.out.println(name.getClass());
         System.out.println(name.charAt(5));
+        System.out.println(name.subSequence(1,5));
+        System.out.println(name.replace(" ","_"));
 
+        String text = "Dear <name>, Hope you are having a good time.";
+        System.out.println(text.replace("<name>",name));
     }
 }
